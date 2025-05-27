@@ -1475,7 +1475,7 @@ var forwardingHistoryCommand = cli.Command{
 	Category: "Payments",
 	Usage:    "Query the history of all forwarded HTLCs.",
 	ArgsUsage: "start_time [end_time] [index_offset] [max_events] " +
-		"[incoming_channel_ids] [outgoing_channel_ids]",
+		"[--incoming_channel_ids] [--outgoing_channel_ids]",
 	Description: `
 	Query the HTLC switch's internal forwarding log for all completed
 	payment circuits (HTLCs) over a particular time range (--start_time and
